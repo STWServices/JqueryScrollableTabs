@@ -1,0 +1,86 @@
+﻿#dialog label, #dialog input { display:block; }
+  #dialog label { margin-top: 0.5em; }
+  #dialog input, #dialog textarea { width: 95%; }
+  #tabs { margin-top: 1em; }
+  #tabs li .ui-icon-close {  }
+  #add_tab { cursor: pointer; }
+
+.tabmanager {
+    background:#F0F0F0;
+margin-top: 25px;
+width: 700px;
+border: #C0C0C0 solid 1px;
+}
+.content {
+margin:20px 0 20px 100px;
+}
+.activities {
+border: #828790 solid 1px;
+width: 385px;
+min-height:100px;
+overflow:auto;
+}
+ul.activities li {
+    list-style:none;
+}
+.tabmanager button
+{
+    background: none;
+border: #C0C0C0 solid 1px;
+padding: 2px 10px;
+margin-right:30px;
+}
+.tabmanager .chkCancel
+{
+    margin-left: 117px;
+}
+.ui-dialog .ui-widget-header {
+    width:100%;
+}
+.ui-state-default .ui-icon {
+    background-image: url('../images/close-icon.png');
+}
+.ui-dialog .ui-dialog-titlebar-close {
+   float: right;
+margin: 3px;
+}
+#add_tab, #close_select, #close_alltab {
+ color: inherit;
+ font-weight: normal;
+}
+.ui-dialog .ui-state-default, .ui-dialog .ui-widget-content .ui-state-default, .ui-dialog .ui-widget-header .ui-state-default {
+    color: inherit;
+    font-weight: normal;
+}
+.ui-dialog-buttonset {
+display:table;
+margin:0 auto;
+}
+.ui-dialog-buttonset button {
+margin-right:10px;
+}
+.ui-dialog .ui-widget-header {
+color:#1E395B;
+}
+.ui-dialog .ui-dialog-title {
+font-weight: bold;
+position: absolute;
+top: 3%;
+left: 3%;}
+
+/*tab in extractor page*/
+#tabUl{position: absolute;padding-left: 2px; padding-bottom: 0px;border: 0px; border-bottom:1px solid #AAAAAA;}
+
+#tabUl li{width: 185px; float: left; display: inline-block; position: relative;}
+
+
+#tabUl li{width: 185px; float: left; display: inline-block; position: relative;}
+/*tab in extractor pageends*/
+
+.ui-tabs .ui-tabs-panel {
+padding:2.5em 1.4em 1em !important;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+width:145px;
+ overflow: hidden;
+}

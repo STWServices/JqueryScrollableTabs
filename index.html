@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Example Page</title>
+    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui-1.10.4.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/formtabsactivity.js"></script>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 12px/18px "Trebuchet MS",sans-serif;
+        }
+
+        .ui-state-default a > img {
+            display: inline-block;
+            float: left;
+            margin: 6px 0 0;
+            padding: 0 7px 0 0;
+        }
+
+        .close {
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 0 0 10px;
+            position: relative;
+        }
+
+        .scrollable {
+            background: none repeat scroll 0 0 #CFDDEE;
+            height: 28px;
+            margin: 1px 0;
+            padding: 0 10px 0 5px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+            .scrollable a {
+                color: #333333;
+                display: block;
+                float: left;
+                height: 7px;
+                margin: 10px 5px 0;
+                text-indent: -99999em;
+                width: 4px;
+            }
+
+        .left {
+            background: url(images/Scro-right.png) left top no-repeat;
+        }
+
+        .right {
+            background: url(images/Scro-left.png) left top no-repeat;
+        }
+
+        .scrollable a:hover {
+            background-position: left bottom;
+        }
+    </style>
+</head>
+<body>
+    <div id="dialog" title="Tab data">
+        <form>
+            <fieldset class="ui-helper-reset">
+                <label for="tab_title">Title</label>
+                <input type="text" name="tab_title" id="tab_title" value="" class="ui-widget-content ui-corner-all">
+                <label for="tab_logo">Logo</label>                
+                <select name="tab_logo" id="tab_logo">
+                    <option value="images/Briefcase.png" selected="selected">Briefcase</option>
+                    <option value="images/Bubble.png">Bubble</option>
+                    <option value="images/Buy.png">Buy</option>
+                </select>
+                <label for="tab_content">Content</label>
+                <textarea name="tab_content" id="tab_content" class="ui-widget-content ui-corner-all"></textarea>
+
+            </fieldset>
+        </form>
+    </div>
+
+
+    <div id="tabs" style="overflow: hidden; width: 100%;">       
+        <ul id="tabUl">
+            <li><a href="#tabs-1" title='First'>
+                <img src="images/Briefcase.png" alt="icon">
+                First </a>
+                <span class="close ui-icon-close">
+                    <img src="images/close-icon.png" alt="close"></span>
+
+            </li>
+        </ul>
+        <div class="scrollable"><a id="right" href="#" class="left" style="display: none;">left</a>  <a id="left"   href="#" style="display: none;" class="right">right</a> </div>
+        <div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        
+    </div>
+
+
+    <div class="tabmanager">
+        <div class="content">
+            <button id="add_tab">Add Tab</button>
+            <button id="close_select">Close Selected</button>
+            <button id="close_alltab">Close All Tabs</button>
+        </div>
+        <div class="content">
+            <input id="chkCancel" class="chkCancel" title="Cancel Close" type="checkbox" />
+            Cancel Close
+        </div>
+        <div class="content">
+            <ul id="activities" class="activities">
+                <li>Added tab "First"</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
